@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fb;
+  color: #333;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #1e3a8a;
+  color: white;
+  min-height: 100vh;
+  padding: 1rem;
+  position: fixed;
+}
+.sidebar h2 {
+  margin: 0 0 1rem;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin: 1rem 0;
+}
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  margin-left: 220px;
+  padding: 1rem 2rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+header .student-info {
+  display: flex;
+  align-items: center;
+}
+header .avatar {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+header .icons i {
+  font-size: 1.2rem;
+}
+
+/* Main Content */
+main {
+  margin-left: 220px;
+  padding: 2rem;
+  flex: 1;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Progress Table */
+.progress-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.progress-section th, .progress-section td {
+  padding: 1rem;
+  text-align: left;
+}
+.progress {
+  background: #e5e7eb;
+  border-radius: 6px;
+  height: 12px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  background: #3b82f6;
+}
+
+/* Deadlines */
+.deadlines ul {
+  list-style: none;
+  padding: 0;
+}
+.deadlines li {
+  background: #fff;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.badge {
+  background: #1e3a8a;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Profile Card */
+.profile-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  header {
+    margin-left: 0;
+  }
+  main {
+    margin-left: 0;
+  }
+}
